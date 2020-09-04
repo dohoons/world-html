@@ -1,6 +1,6 @@
 # World HTML
 `Realworld`의 Front-end (React.js) 반응형웹 구현인  
-`World`(https://dohoons.github.io/world)의 Static HTML Template 입니다.
+`World`( https://dohoons.github.io/world )의 Static HTML Template 입니다.
 
 ### CSS 링크
 ```html
