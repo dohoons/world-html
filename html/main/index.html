@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta charset="utf-8">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+<meta name="theme-color" content="#000000">
+
+<title>Home - World</title>
+
+
+<link rel="stylesheet" href="../../css/style.css">
+<body>
+  <!-- 메뉴 열림: .is-opened -->
+  <header class="common-header">
+    <div class="wrap">
+      <h1 class="logo">
+        <a href="/"><i class="fas fa-globe"></i> World</a>
+      </h1>
+      <div class="btn-wrap">
+        <button type="button" class="btn-menu">
+          <i class="fas fa-bars"></i> <span>메뉴</span>
+        </button>
+      </div>
+      <ul class="nav">
+        <li>
+          <a class="home" href="/">Home</a>
+        </li>
+        <li>
+          <a href="/form"><i class="far fa-edit"></i> 글등록</a>
+        </li>
+        <li>
+          <a href="/@dohoons"><i class="far fa-user"></i> 프로필</a>
+        </li>
+        <li>
+          <a href="#">로그아웃</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div class="dim"></div>
+  
+  
+  <div class="page-main">
+    <div class="top-visual init"><p class="copy"><span class="hello">Hello</span> World</p></div>
+    <div class="container">
+      <div class="body">
+        <ul class="nav-tab">
+          <li class="selected"><a href="/feed">내 담벼락</a></li>
+          <li class=""><a href="/articles">전체 글목록</a></li>
+        </ul>
+        
+        <p class="article-list-total">1 / 3</p>
+        <ul class="article-list">
+          <li class="article-item">
+            <p class="title"><a href="/article/foobar">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aspernatur placeat rem reprehenderit eum ab laudantium asperiores est officia ducimus quasi ipsam deserunt cum velit esse, voluptatem doloremque maiores vero.</p>
+            <div class="info">
+              <div class="author-info">
+                <a class="link" href="/@dohoons">
+                  <div class="img">
+                    <img src="../../img/profile-dummy.jpg" alt="" />
+                  </div>
+                  <p class="name">dohoons</p>
+                </a>
+                <p class="date">Sun Dec 02 2018</p>
+              </div>
+              <ul class="tag-list small">
+                <li><a class="" href="/tag/test">test</a></li>
+              </ul>
+            </div>
+            <button type="button" class="btn-like">
+              <i class="fas fa-heart"></i><span class="txt">좋아요</span>
+              <span class="count">1</span>
+            </button>
+          </li>
+          <li class="article-item">
+            <p class="title"><a href="/article/foobar">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iusto veritatis qui? Modi molestiae, sed deleniti inventore alias quia obcaecati dolores, tempore esse ex dicta itaque laudantium saepe iure laboriosam!</p>
+            <div class="info">
+              <div class="author-info">
+                <a class="link" href="/@dohoons">
+                  <div class="img">
+                    <img src="https://avatars1.githubusercontent.com/u/5266928?s=460&v=4" alt="" />
+                  </div>
+                  <p class="name">dohoons</p>
+                </a>
+                <p class="date">Sun Dec 02 2018</p>
+              </div>
+              <ul class="tag-list small">
+                <li><a class="" href="/tag/green">green</a></li>
+              </ul>
+            </div>
+            <button type="button" class="btn-like favorited">
+              <i class="fas fa-heart"></i><span class="txt">좋아요</span>
+              <span class="count">2</span>
+            </button>
+          </li>
+          <li class="article-item">
+            <p class="title"><a href="/article/foobar">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+            <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis fugiat exercitationem ea magnam quae harum modi, nemo delectus recusandae dicta rem fugit maiores iste voluptas incidunt assumenda ad possimus reprehenderit.</p>
+            <div class="info">
+              <div class="author-info">
+                <a class="link" href="/@dohoons">
+                  <div class="img">
+                    <img src="https://avatars1.githubusercontent.com/u/5266928?s=460&v=4" alt="" />
+                  </div>
+                  <p class="name">dohoons</p>
+                </a>
+                <p class="date">Sun Dec 02 2018</p>
+              </div>
+              <ul class="tag-list small">
+                <li><a class="" href="/tag/apple">apple</a></li>
+                <li><a class="" href="/tag/dragons">dragons</a></li>
+              </ul>
+            </div>
+            <button type="button" class="btn-like">
+              <i class="fas fa-heart"></i><span class="txt">좋아요</span>
+              <span class="count">1</span>
+            </button>
+          </li>
+        </ul>
+        
+        <div class="pagination">
+          <ul>
+            <li class=""><a class="" href="/feed/1" aria-label="Go to first page"><span class="fas fa-angle-double-left"><span class="txt">처음</span></span></a></li>
+            <li class=""><a class="" href="/feed/0" aria-label="Go to previous page"><span class="fas fa-angle-left"><span class="txt">이전</span></span></a></li>
+            
+            <li class="active"><a class="active" href="/feed/1" aria-label="Go to page number 1">1</a></li>
+            <li class=""><a class="" href="/feed/2" aria-label="Go to page number 2">2</a></li>
+            <li class=""><a class="" href="/feed/3" aria-label="Go to page number 3">3</a></li>
+            
+            <li class=""><a class="" href="/feed/2" aria-label="Go to next page"><span class="fas fa-angle-right"><span class="txt">다음</span></span></a></li>
+            <li class=""><a class="" href="/feed/3" aria-label="Go to last page"><span class="fas fa-angle-double-right"><span class="txt">마지막</span></span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="side">
+        <div class="tag-area">
+          <h2 class="title">인기 태그</h2>
+          <ul class="tag-list">
+            <li><a class="" href="/tag/apple">apple</a></li>
+            <li><a class="" href="/tag/test">test</a></li>
+            <li><a class="" href="/tag/dragons">dragons</a></li>
+            <li><a class="" href="/tag/green">green</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="common-footer">
+    <h2 class="hide">푸터</h2>
+    <div class="lang-change">
+      <button type="button" class="is-active">
+        <i class="fas fa-check"></i> 한국어
+      </button>
+      <button type="button" class="">
+        <i class="fas fa-check"></i> English
+      </button>
+    </div>
+  </footer>
+  
+</body>
+</html>
