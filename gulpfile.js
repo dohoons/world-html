@@ -37,7 +37,7 @@ function server(done) {
     ui: { port: 3501 },
     ghostMode: { clicks: true, forms: true, scroll: false },
     files: [
-      `${distPath}/html-list.html`,
+      `${distPath}/index.html`,
       `${distPath}/css/**/*`,
       `${distPath}/html/**/*`,
       `${distPath}/img/**/*`,
