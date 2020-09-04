@@ -1,0 +1,70 @@
+{%
+  set pageVar = {
+    title: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.'
+  }
+%}
+{% extends '@inc/layout.html' %}
+
+{% block content -%}
+<div class="container page-form">
+  <div class="common-form">
+  <h2 class="form-title">글 등록하기</h2>
+    <form>
+      <fieldset>
+        <div class="form-row">
+          <label>
+            <span class="form-head">제목</span>
+            <input
+              type="text"
+              name="title"
+              placeholder="제목"
+              class="txt large block"
+              value=""
+            />
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
+            <span class="form-head">설명</span>
+            <input
+              type="text"
+              name="description"
+              placeholder="설명"
+              class="txt large block"
+              value=""
+            />
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
+            <span class="form-head">내용</span>
+            <textarea
+              cols="60"
+              rows="10"
+              name="body"
+              placeholder="내용"
+              class="txt large block"
+            ></textarea>
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
+            <span class="form-head">태그</span>
+            <input
+              type="text"
+              name="tag"
+              placeholder="태그"
+              class="txt large block"
+              value=""
+            />
+          </label>
+        </div>
+        <div class="form-action">
+          <button type="submit" class="btn large primary">등록</button>
+          <button type="button" class="btn large">취소</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>
+{%- endblock %}
