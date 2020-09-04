@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
 <meta name="theme-color" content="#000000">
 
-<title>글 수정하기 - World</title>
+<title>프로필 수정 - World</title>
 
 
 <link rel="stylesheet" href="../css/style.css">
@@ -48,61 +48,73 @@
   <div class="dim"></div>
   
   
-  <div class="container page-form">
+  <div class="container page-profile-edit">
     <div class="common-form">
-      <h2 class="form-title">글 수정하기</h2>
+      <h2 class="form-title">프로필 수정</h2>
       <form>
         <fieldset>
           <div class="form-row">
             <label>
-              <span class="form-head">제목</span>
+              <span class="form-head">프로필 이미지</span>
               <input
                 type="text"
-                name="title"
-                placeholder="제목"
+                name="image"
+                placeholder="프로필 이미지 URL"
                 class="txt large block"
-                value="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+                value="https://avatars1.githubusercontent.com/u/5266928?s=460&amp;v=4"
                 />
             </label>
           </div>
           <div class="form-row">
             <label>
-              <span class="form-head">설명</span>
+              <span class="form-head">사용자 이름</span>
               <input
                 type="text"
-                name="description"
-                placeholder="설명"
+                name="username"
+                placeholder="사용자 이름"
                 class="txt large block"
-                value="Minima iusto veritatis qui? Modi molestiae, sed deleniti inventore alias quia obcaecati dolores, tempore esse ex dicta itaque laudantium saepe iure laboriosam!"
+                value="dohoons"
                 />
             </label>
           </div>
           <div class="form-row">
             <label>
-              <span class="form-head">내용</span>
+              <span class="form-head">소개</span>
               <textarea
                 cols="60"
                 rows="10"
-                name="body"
-                placeholder="내용"
+                name="bio"
+                placeholder="소개"
                 class="txt large block"
-                ></textarea>
+                >Ubiquitous Web</textarea>
             </label>
           </div>
           <div class="form-row">
             <label>
-              <span class="form-head">태그</span>
+              <span class="form-head">이메일</span>
               <input
                 type="text"
-                name="tag"
-                placeholder="태그"
+                name="email"
+                placeholder="이메일"
+                class="txt large block"
+                value="dohoons@foo.com"
+                />
+            </label>
+          </div>
+          <div class="form-row">
+            <label>
+              <span class="form-head">새 비밀번호</span>
+              <input
+                type="password"
+                name="password"
+                placeholder="새 비밀번호"
                 class="txt large block"
                 value=""
                 />
             </label>
           </div>
           <div class="form-action">
-            <button type="submit" class="btn large primary">등록</button>
+            <button type="submit" class="btn large primary">수정</button>
             <button type="button" class="btn large">취소</button>
           </div>
         </fieldset>

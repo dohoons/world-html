@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
 <meta name="theme-color" content="#000000">
 
-<title>글 수정하기 - World</title>
+<title>로그인 - World</title>
 
 
 <link rel="stylesheet" href="../css/style.css">
@@ -48,65 +48,44 @@
   <div class="dim"></div>
   
   
-  <div class="container page-form">
+  <div class="container page-login">
     <div class="common-form">
-      <h2 class="form-title">글 수정하기</h2>
+      <h2 class="form-title">로그인</h2>
       <form>
         <fieldset>
+          <legend>로그인</legend>
           <div class="form-row">
             <label>
-              <span class="form-head">제목</span>
+              <span class="form-head">이메일</span>
               <input
-                type="text"
-                name="title"
-                placeholder="제목"
+                type="email"
+                name="email"
+                placeholder="이메일"
                 class="txt large block"
-                value="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+                value=""
                 />
             </label>
           </div>
           <div class="form-row">
             <label>
-              <span class="form-head">설명</span>
+              <span class="form-head">비밀번호</span>
               <input
-                type="text"
-                name="description"
-                placeholder="설명"
-                class="txt large block"
-                value="Minima iusto veritatis qui? Modi molestiae, sed deleniti inventore alias quia obcaecati dolores, tempore esse ex dicta itaque laudantium saepe iure laboriosam!"
-                />
-            </label>
-          </div>
-          <div class="form-row">
-            <label>
-              <span class="form-head">내용</span>
-              <textarea
-                cols="60"
-                rows="10"
-                name="body"
-                placeholder="내용"
-                class="txt large block"
-                ></textarea>
-            </label>
-          </div>
-          <div class="form-row">
-            <label>
-              <span class="form-head">태그</span>
-              <input
-                type="text"
-                name="tag"
-                placeholder="태그"
+                type="password"
+                name="password"
+                placeholder="비밀번호"
                 class="txt large block"
                 value=""
                 />
             </label>
           </div>
           <div class="form-action">
-            <button type="submit" class="btn large primary">등록</button>
-            <button type="button" class="btn large">취소</button>
+            <button type="submit" class="btn large primary">로그인</button>
           </div>
         </fieldset>
       </form>
+      <div class="info-box">
+        처음 오셨나요? <a href="/join">회원가입</a>을 해주세요.
+      </div>
     </div>
   </div>
   
