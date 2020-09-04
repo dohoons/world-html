@@ -1,0 +1,49 @@
+{%
+  set pageVar = {
+    title: '로그인'
+  }
+%}
+{% extends '@inc/layout.html' %}
+
+{% block content -%}
+<div class="container page-login">
+  <div class="common-form">
+    <h2 class="form-title">로그인</h2>
+    <form>
+      <fieldset>
+        <legend>로그인</legend>
+        <div class="form-row">
+          <label>
+            <span class="form-head">이메일</span>
+            <input
+              type="email"
+              name="email"
+              placeholder="이메일"
+              class="txt large block"
+              value=""
+            />
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
+            <span class="form-head">비밀번호</span>
+            <input
+              type="password"
+              name="password"
+              placeholder="비밀번호"
+              class="txt large block"
+              value=""
+            />
+          </label>
+        </div>
+        <div class="form-action">
+          <button type="submit" class="btn large primary">로그인</button>
+        </div>
+      </fieldset>
+    </form>
+    <div class="info-box">
+      처음 오셨나요? <a href="/join">회원가입</a>을 해주세요.
+    </div>
+  </div>
+</div>
+{%- endblock %}
