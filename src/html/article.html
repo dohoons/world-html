@@ -1,0 +1,111 @@
+{%
+  set pageVar = {
+    title: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.'
+  }
+%}
+{% extends '@inc/layout.html' %}
+
+{% block content -%}
+<div class="page-article">
+  <div class="article-header">
+    <div class="wrap">
+      <h2 class="subject">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
+      <p class="desc">Minima iusto veritatis qui? Modi molestiae, sed deleniti inventore alias quia obcaecati dolores, tempore esse ex dicta itaque laudantium saepe iure laboriosam!</p>
+      <div class="info">
+        <div class="author-info">
+          <a class="link" href="/@dohoons"><div class="img">
+            <img src="https://avatars1.githubusercontent.com/u/5266928?s=460&v=4" alt="" />
+            </div>
+            <p class="name">dohoons</p>
+          </a>
+          <p class="date">Sun Dec 02 2018</p>
+        </div>
+        <button type="button" class="btn-like"><!-- .favorited -->
+          <i class="fas fa-heart"></i><span class="txt">좋아요</span>
+          <span class="count">2</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="article-body">
+      <div class="body">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores aperiam repellat explicabo deserunt veniam aut consequuntur, iste, labore ut quisquam omnis. Quod eum quasi a eveniet modi ab, nihil ratione!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam quibusdam odio, dolores rerum natus quos aut tenetur quo totam eligendi magni eveniet, aspernatur provident rem voluptate minus maxime animi iure.</p>
+      </div>
+
+      <ul class="tag-list">
+        <li><a class="" href="/tag/apple">apple</a></li>
+        <li><a class="" href="/tag/dragons">dragons</a></li>
+      </ul>
+    </div>
+
+    <div class="page-foot">
+      <button type="button" class="btn">수정</button>
+      <button type="button" class="btn">삭제</button>
+      <button type="button" class="btn">목록</button>
+    </div>
+
+    <h3 class="comment-title">댓글</h3>
+
+    <form class="comment-form">
+      <div class="comment-txt">
+        <textarea rows="10" cols="40" placeholder="댓글을 입력하세요.." name="comment"></textarea>
+      </div>
+      <div class="action">
+        <button type="submit" class="btn light">등록</button>
+      </div>
+    </form>
+
+    <ul class="comment-list">
+      <li class="no-item">등록된 댓글이 없습니다.</li>
+      <li>
+        <a class="img" href="/@dohoons">
+          <img src="https://avatars1.githubusercontent.com/u/5266928?s=460&amp;v=4" alt="" />
+        </a>
+        <div class="wrap">
+          <div class="info">
+            <a class="name" href="/@dohoons">dohoons</a>
+            <span class="date">Fri Jan 04 2019</span>
+          </div>
+          <button type="button" class="del">
+            <i class="far fa-trash-alt"></i> <span class="hide">삭제</span>
+          </button>
+          <div class="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima maxime maiores reiciendis perspiciatis dolorem, iusto eaque deleniti praesentium autem est sunt dicta quia suscipit rem laudantium tempore dolorum saepe aliquid.</div>
+        </div>
+      </li>
+      <li>
+        <a class="img" href="/@dohoons">
+          <img src="https://avatars1.githubusercontent.com/u/5266928?s=460&amp;v=4" alt="" />
+        </a>
+        <div class="wrap">
+          <div class="info">
+            <a class="name" href="/@dohoons">dohoons</a>
+            <span class="date">Fri Jan 04 2019</span>
+          </div>
+          <button type="button" class="del">
+            <i class="far fa-trash-alt"></i> <span class="hide">삭제</span>
+          </button>
+          <div class="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima maxime maiores reiciendis perspiciatis dolorem, iusto eaque deleniti praesentium autem est sunt dicta quia suscipit rem laudantium tempore dolorum saepe aliquid.</div>
+        </div>
+      </li>
+      <li>
+        <a class="img" href="/@dohoons">
+          <img src="https://avatars1.githubusercontent.com/u/5266928?s=460&amp;v=4" alt="" />
+        </a>
+        <div class="wrap">
+          <div class="info">
+            <a class="name" href="/@dohoons">dohoons</a>
+            <span class="date">Fri Jan 04 2019</span>
+          </div>
+          <button type="button" class="del">
+            <i class="far fa-trash-alt"></i> <span class="hide">삭제</span>
+          </button>
+          <div class="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima maxime maiores reiciendis perspiciatis dolorem, iusto eaque deleniti praesentium autem est sunt dicta quia suscipit rem laudantium tempore dolorum saepe aliquid.</div>
+        </div>
+      </li>
+    </ul>
+
+  </div>
+</div>
+{%- endblock %}
