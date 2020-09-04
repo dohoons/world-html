@@ -1,0 +1,82 @@
+{%
+  set pageVar = {
+    title: '프로필 수정'
+  }
+%}
+{% extends '@inc/layout.html' %}
+
+{% block content -%}
+<div class="container page-profile-edit">
+  <div class="common-form">
+    <h2 class="form-title">프로필 수정</h2>
+    <form>
+      <fieldset>
+        <div class="form-row">
+          <label>
+            <span class="form-head">프로필 이미지</span>
+            <input
+              type="text"
+              name="image"
+              placeholder="프로필 이미지 URL"
+              class="txt large block"
+              value="https://avatars1.githubusercontent.com/u/5266928?s=460&amp;v=4"
+            />
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
+            <span class="form-head">사용자 이름</span>
+            <input
+              type="text"
+              name="username"
+              placeholder="사용자 이름"
+              class="txt large block"
+              value="dohoons"
+            />
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
+            <span class="form-head">소개</span>
+            <textarea
+              cols="60"
+              rows="10"
+              name="bio"
+              placeholder="소개"
+              class="txt large block"
+            >Ubiquitous Web</textarea>
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
+            <span class="form-head">이메일</span>
+            <input
+              type="text"
+              name="email"
+              placeholder="이메일"
+              class="txt large block"
+              value="dohoons@foo.com"
+            />
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
+            <span class="form-head">새 비밀번호</span>
+            <input
+              type="password"
+              name="password"
+              placeholder="새 비밀번호"
+              class="txt large block"
+              value=""
+            />
+          </label>
+        </div>
+        <div class="form-action">
+          <button type="submit" class="btn large primary">수정</button>
+          <button type="button" class="btn large">취소</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>
+{%- endblock %}

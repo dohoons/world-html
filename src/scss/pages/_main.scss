@@ -89,4 +89,22 @@
       margin-left: 0;
     }
   }
+
+  .tag-title {
+    margin-bottom: 25px;
+    font-weight: 500;
+    font-size: 30px;
+    color: #97a1a7;
+    letter-spacing: -.04em;
+
+    span {
+      margin-left: 5px;
+      color: #374047;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+  }
 }
